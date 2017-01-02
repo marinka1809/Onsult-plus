@@ -1,0 +1,165 @@
+
+@import "reset";
+
+
+body {
+  font: bold 12px/15px CenturyGothicRegular;
+  //color: $dark-primary-color;
+  background-color: #f6f6f6;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 1.5em;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid transparent;
+  //border-bottom-color: $second-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    text-decoration: none;
+   // border-color: $second-color;
+  }
+}
+
+.header-section { 
+
+    h1{
+      
+    }
+    p {
+      
+    }
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.slider-nav {
+  background-color: transparent;
+  width: 5%;
+
+
+  .fa {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .slider-nav-right,
+  .slider-nav-left {
+    margin-top: -50px;
+    width: auto;
+    height: auto;
+    background-color: #000000;
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .slider-nav-right {
+    right: 0;
+    margin-right: 10px;
+    padding: 0 5px 0 10px;
+  }
+
+  .slider-nav-left {
+    left: 0;
+    margin-left: 10px;
+    padding: 0 10px 0 5px;
+  }
+
+}
+
+
+//---------------------------HEADER------------------------
+#header {
+  padding: 5px 0;
+
+  .logo {
+    width: 149px;
+    height: 42px;
+    overflow: hidden;
+  }
+}
+
+.nav-wrapper {
+  margin: 0;
+  background: transparent;
+  border:none;
+  box-shadow:none;
+
+  .mob-menu-button {
+    margin: 20px;
+    background-color: transparent;
+
+    .icon-bar {
+     // color: $second-color;
+    }
+
+    &:focus,
+    &:hover,
+    .active{
+      background-color: transparent;
+     // box-shadow: 0 0 8px $second-color;
+    }
+  }
+
+  .collapse.in {
+
+    .main-nav {
+      padding-top: 0;
+      > li {
+        > a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+          font-size: 1em;
+          line-height: 1em;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    padding: 20px 0 0;
+    >li {
+      margin-left: 10px;
+      >a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+        color: #000000;
+        //font-family: CodeLight;
+        font-weight: bold;
+        line-height: 2em;
+
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus,
+        &.active {
+         // background-color:$second-color;
+        }
+      }
+    }
+  }
+}
+
+//-----------------------SLIDER-SECTION-----------------
+.slider-section {
+
+  #slider-top {
+    overflow: hidden;
+
+    .slide {
+      //background: url("../img/slider-bg-1.jpg") 50% 50% no-repeat;
+      //background-size: cover;
+    }
+  }  
+
+}
+
+
+
+@import "media768";
+@import "media992";
+@import "media1200";
