@@ -1,7 +1,16 @@
 @media screen and (min-width: 768px) {
   body {
-    
+    body {
+      font: 13px/1.8em 'Domine', serif;
+    }
   }
+  .industry-section {
 
+    #slider-top {
+      .slide {
+      height: calc(100vh - 112px);
+      }
+    }
+  }
  
 }
