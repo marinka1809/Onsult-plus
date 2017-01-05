@@ -9,7 +9,6 @@
 
         <script src="js/libs.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.css">
 
         <link rel="stylesheet" href="stylesheets/libs.min.css" type="text/css"/>
@@ -82,44 +81,46 @@
                             <p>We are leading consulting company</p>
                             <h1>Choose your industry</h1>
                         </header>
-                        <ul class="row">
+                        <ul>
                             <li class="col-sm-6">
-                                <a href="">
+                                <a class="industry-link" href="">
                                     <img src="img/icon-education.png" alt="Education icon">
                                     Education
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="col-sm-6">
-                                <a href="">
+                                <a class="industry-link" href="">
                                     <img src="img/icon-business.png" alt="Business icon">
                                     Business
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="col-sm-6">
-                                <a href="">
+                                <a class="industry-link" href="">
                                     <img src="img/icon-technology.png" alt="Technology icon">
                                     Technology
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="col-sm-6">
-                                <a href="">
+                                <a class="industry-link" href="">
                                     <img src="img/icon-real-estate.png" alt="Real estate icon">
                                     Real estate
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="col-sm-6">
-                                <a href="">
+                                <a class="industry-link" href="">
                                     <img src="img/icon-banking.png" alt="Banking icon">
                                     Banking
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="col-sm-6">
-                                <a class="button-link" href="#">View More</a>
+                                <a  class="industry-link last" href="#">
+                                    <button class="button-link">View More</button>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -304,34 +305,28 @@
                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
                                unchanged.
+                                <span></span>
                             </blockquote>
-                            <span></span>
                         </div>
                         <div class="item slide">
                             <blockquote>
                                 Lorem Ipsum is simply  text of and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining.
                                 unchanged.
+                                <span></span>
                             </blockquote>
-                            <span></span>
                         </div>
                         <div class="item slide">
                             <blockquote>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
                                 unchanged.
+                                <span></span>
                             </blockquote>
-                            <span></span>
                         </div>
                     </div>
 
                     <!-- Controls -->
-                    <!--<ol class="carousel-indicators slider-nav-bottom">-->
-                        <!--<li data-target="#slider-clients" data-slide-to="0" class="active"></li>-->
-                        <!--<li data-target="#slider-clients" data-slide-to="1"></li>-->
-                        <!--<li data-target="#slider-clients" data-slide-to="2"></li>-->
-                    <!--</ol>-->
-
                     <ol class="carousel-indicators slider-preview">
                         <li data-target="#slider-clients" data-slide-to="0" class="active">
                             <div class="photo-wrapper">
@@ -361,6 +356,11 @@
                             </div>
                         </li>
                     </ol>
+                    <ol class="carousel-indicators slider-nav-bottom">
+                        <li data-target="#slider-clients" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider-clients" data-slide-to="1"></li>
+                        <li data-target="#slider-clients" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
         </section>
@@ -371,13 +371,15 @@
                         <header class="section-header">
                             <p>News</p>
                             <h1>Our Blog</h1>
-                            <button class="active">Top posts</button>
-                            <button class="active">Check all post</button>
+                            <div class="mini-nav">
+                                <button class="active">Top posts</button>
+                                <button >Check all post</button>
+                            </div>
                         </header>
                         <ul class="posts">
                             <li>
                                 <data value="2016.20.02">February <span class="color">20, 2016</span></data>
-                                <h2><a href="#">Many variations of passages of Ipsum</a></h2>
+                                <h2><a href="#">Blog Heading here Business</a></h2>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting
                                     industry. Lorem Ipsum has been the industry...
@@ -385,13 +387,13 @@
                             </li>
                             <li>
                                 <data value="2016.22.02">February 22, 2016 </data>
-                                <h2><a href="#">Blog Heading here Business</a></h2>
+                                <h2><a href="#">Many variations of passages of Ipsum</a></h2>
                                 <p>
                                     Established fact that a reader will be distracted by the readable
                                     of a page when looking at its layout. The point of using Lorem...
                                 </p>
                             </li>
-                            <li>
+                            <li class="last">
                                 <data value="2016.25.02">February 25, 2016 </data>
                                 <h2><a href="#">Internet tend to repeat predefined</a></h2>
                                 <p>
@@ -404,23 +406,21 @@
                 </div>
             </div>
         </section>
-
-        <section class="section blog-section ">
+        <section class="section contacts-section">
             <div class="container">
-                <div class="row">
+
                     <header class="section-header">
-                        <p>News</p>
-                        <h1>Our Blog</h1>
-                        <button class="active">Top posts</button>
-                        <button class="active">Check all post</button>
+                        <p>for Consulting</p>
+                        <h1>Contact us</h1>
                     </header>
+                <div class="row">
                     <ul>
                         <li class="col-sm-4">
                             <a class="group-block"  href="mailto:info@consultplus.com">
                                 <img src="img/icon-email.png" alt="Icon Email">
                                 <dl>
                                     <dt>Email</dt>
-                                    <dl>info@consultplus.com</dl>
+                                    <dd>info@consultplus.com</dd>
                                 </dl>
                             </a>
                         </li>
@@ -429,7 +429,7 @@
                                 <img src="img/icon-call.png" alt="Icon Call Us">
                                 <dl>
                                     <dt>Call Us</dt>
-                                    <dl>+91 8879 8767 990</dl>
+                                    <dd>+91 8879 8767 990</dd>
                                 </dl>
                             </a>
                         </li>
@@ -438,7 +438,7 @@
                                 <img src="img/icon-career.png" alt="Icon Career">
                                 <dl>
                                     <dt>Career</dt>
-                                    <dl>consult@career.com</dl>
+                                    <dd>consult@career.com</dd>
                                 </dl>
                             </a>
                         </li>
@@ -449,7 +449,7 @@
         <footer id="footer" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6" id="mc_embed_signup">
+                    <div class="col-sm-5 col-md-6" id="mc_embed_signup">
                         <h2>News letter</h2>
                         <p>
                             Enter your email address to subscribe our notification
@@ -461,12 +461,12 @@
                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ff3353a0c4970c438b8add37e_e11763e9cd" tabindex="-1" value=""></div>
-                                <button  type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </button>
+                                <button  type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
 
                             </div>
                         </form>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-7 col-md-6">
                         <ul class="row">
                             <li class="col-sm-4">
                                 <h2>Navigation</h2>
@@ -504,6 +504,7 @@
                         </ul>
                     </div>
                 </div>
+                <p class="copyright" > Copyright © 2016 Consultplus theme.</p>
             </div>
         </footer>
 

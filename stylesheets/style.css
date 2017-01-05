@@ -56,7 +56,7 @@ body {
 
 .button-link {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 2.5em;
   font: 0.8em "Montserrat", sans-serif;
   line-height: 3em;
   color: #ffffff;
@@ -71,7 +71,7 @@ body {
     background-color: transparent; }
 
 .section-header {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
   .section-header p {
@@ -172,12 +172,13 @@ body {
         color: #ffac56; }
 
 .industry-section #slider-top .slide {
+  height: 800px;
   background: url("../img/slide-img-1.jpg") 50% 50% no-repeat;
   background-size: cover; }
 
 .industry-section .industry-block {
   position: absolute;
-  top: 20%;
+  top: 100px;
   width: 460px;
   max-width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -191,15 +192,56 @@ body {
       font-size: 0.9em; }
     .industry-section .industry-block header h1 {
       font: 2em 'Lato', sans-serif; }
+  .industry-section .industry-block ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .industry-section .industry-block li {
-    border-right: 1px solid #00a6d3;
-    border-bottom: 1px solid #00a6d3; }
-    .industry-section .industry-block li a {
+    padding: 0;
+    border: 1px solid #00a6d3; }
+  .industry-section .industry-block .industry-link {
+    display: block;
+    height: 100%;
+    padding: 30px;
+    color: inherit; }
+    .industry-section .industry-block .industry-link.last {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center; }
+    .industry-section .industry-block .industry-link img {
       display: block;
-      padding: 20px;
-      color: inherit; }
-      .industry-section .industry-block li a img {
-        display: block; }
+      margin-bottom: 10px; }
+    .industry-section .industry-block .industry-link .fa-angle-right {
+      display: inline-block;
+      float: right;
+      padding: 0 0.5em;
+      font-size: 1.2em;
+      line-height: 1.2em;
+      border: 2px solid #ffffff;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      opacity: 0.5; }
+    .industry-section .industry-block .industry-link:hover {
+      background-color: #00a6d3;
+      text-decoration: none; }
+      .industry-section .industry-block .industry-link:hover .fa-angle-right {
+        opacity: 1; }
 
 .about-us-section .text-wrapper {
   text-align: right; }
@@ -255,7 +297,7 @@ body {
   .projects-section .section-header {
     text-align: left; }
   .projects-section li {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
   .projects-section .project {
     position: relative; }
     .projects-section .project:hover .hover-block {
@@ -322,22 +364,44 @@ body {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      padding: 50px 20px; }
+      padding: 10px; }
     .projects-section .hover-block h2 {
-      margin-bottom: 10px;
-      font: bold 1.2em "Montserrat", sans-serif;
+      margin-bottom: 5px;
+      font: bold 0.9em "Montserrat", sans-serif;
       text-transform: uppercase; }
 
 .clients-section {
   background-color: #03b6e7;
-  color: #ffffff; }
+  color: #ddf8ff; }
   .clients-section .section-header p {
     color: #a6ecff; }
   .clients-section .section-header h1 {
     color: #ffffff; }
-  .clients-section .slider-nav-bottom {
-    left: 95%; }
-  .clients-section #slider-clients .slider-preview {
+  .clients-section .slide blockquote {
+    position: relative;
+    padding: 20px 100px 0;
+    margin-bottom: 50px; }
+    .clients-section .slide blockquote:before, .clients-section .slide blockquote:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      width: 68px;
+      height: 48px;
+      background: url(../img/icon-quote.png) no-repeat; }
+    .clients-section .slide blockquote:before {
+      left: 0; }
+    .clients-section .slide blockquote:after {
+      right: 0;
+      -webkit-transform: scaleX(-1);
+          -ms-transform: scaleX(-1);
+              transform: scaleX(-1); }
+  .clients-section .slide span {
+    display: block;
+    margin-top: 30px;
+    width: 17px;
+    border-bottom: 2px solid #ffffff; }
+  .clients-section .slider-preview {
     position: static;
     display: -webkit-box;
     display: -webkit-flex;
@@ -350,7 +414,7 @@ body {
     width: 80%;
     height: auto;
     margin: 0; }
-    .clients-section #slider-clients .slider-preview li {
+    .clients-section .slider-preview li {
       position: static;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -370,7 +434,7 @@ body {
       border: none;
       -webkit-border-radius: 0;
               border-radius: 0; }
-    .clients-section #slider-clients .slider-preview .photo-wrapper {
+    .clients-section .slider-preview .photo-wrapper {
       margin-right: 30px;
       width: 66px;
       height: 66px;
@@ -379,27 +443,242 @@ body {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       opacity: 0.5; }
-    .clients-section #slider-clients .slider-preview h2 {
+    .clients-section .slider-preview h2 {
       font: bold 1em "Montserrat", sans-serif;
-      text-transform: uppercase; }
-    .clients-section #slider-clients .slider-preview .active {
+      text-transform: uppercase;
+      color: #ffffff; }
+    .clients-section .slider-preview .active {
       background: none; }
-      .clients-section #slider-clients .slider-preview .active .photo-wrapper {
+      .clients-section .slider-preview .active .photo-wrapper {
         opacity: 1; }
+  .clients-section .slider-nav-bottom {
+    left: auto;
+    right: 0;
+    display: inline-block;
+    width: auto;
+    margin: 0; }
+    .clients-section .slider-nav-bottom li {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #ffffff; }
+      .clients-section .slider-nav-bottom li:hover, .clients-section .slider-nav-bottom li.active {
+        border-color: #16d428;
+        background-color: transparent; }
+        .clients-section .slider-nav-bottom li:hover:after, .clients-section .slider-nav-bottom li.active:after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          width: 3px;
+          height: 3px;
+          background-color: #16d428;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+
+.blog-section {
+  position: relative;
+  background-color: #e7eff1;
+  padding-bottom: 0; }
+  .blog-section:after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    height: 400px;
+    background: url(../img/man-on-cliff.jpg) 0 0 no-repeat;
+    background-size: auto 100%; }
+  .blog-section header h1 {
+    position: relative; }
+  .blog-section header .mini-nav {
+    margin-top: 20px; }
+    .blog-section header .mini-nav button {
+      display: inline-block;
+      width: 12em;
+      margin-right: 20px;
+      text-align: center;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 2px solid #989fa0;
+      -webkit-border-radius: 20px;
+              border-radius: 20px; }
+      .blog-section header .mini-nav button.active {
+        border-color: #ffac56; }
+      .blog-section header .mini-nav button:hover {
+        color: #ffac56; }
+  .blog-section .posts li {
+    margin-bottom: 60px; }
+    .blog-section .posts li.last {
+      margin-bottom: 0; }
+  .blog-section .posts data {
+    color: #343a3b; }
+    .blog-section .posts data span.color {
+      color: #16d428; }
+  .blog-section .posts h2 {
+    margin-bottom: 20px;
+    color: #343a3b;
+    font: bold 1.2em "Montserrat", sans-serif;
+    text-transform: uppercase; }
+    .blog-section .posts h2 a {
+      color: inherit; }
+      .blog-section .posts h2 a:hover {
+        color: #16d428; }
+
+.contacts-section .group-block {
+  display: block;
+  height: 128px;
+  padding: 40px 30px;
+  color: #343a3b;
+  text-align: center;
+  border: 1px solid #e1eaec; }
+  .contacts-section .group-block img {
+    float: none; }
+  .contacts-section .group-block dt {
+    font: bold 1.2em "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  .contacts-section .group-block dd {
+    font-size: 1.2em; }
+  .contacts-section .group-block:hover {
+    -webkit-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    text-decoration: none;
+    background-color: #e7eff1; }
+
+#footer {
+  background-color: #262829;
+  padding-bottom: 50px; }
+  #footer h2 {
+    margin-bottom: 30px;
+    color: #e1e1e1;
+    font: bold 1.3em "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  #footer #mc-embedded-subscribe-form {
+    position: relative;
+    margin-top: 40px;
+    line-height: 3.3em; }
+    #footer #mc-embedded-subscribe-form .email {
+      width: 100%;
+      padding: 0 10em 0 2em;
+      text-transform: uppercase;
+      background-color: #323334;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      border: 0; }
+    #footer #mc-embedded-subscribe-form .button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 2em;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #16d428;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      border: 0; }
+      #footer #mc-embedded-subscribe-form .button:hover {
+        border: 2px solid #16d428;
+        background-color: transparent;
+        color: #16d428; }
+  #footer a {
+    color: inherit;
+    text-transform: uppercase; }
+    #footer a:hover {
+      color: #ffac56;
+      text-decoration: none; }
+  #footer .copyright {
+    margin-top: 90px;
+    padding: 20px 0 0;
+    border-top: 1px solid #323334; }
 
 @media screen and (min-width: 768px) {
-  body body {
+  body {
     font: 13px/1.8em 'Domine', serif; }
+  .section-header {
+    margin-bottom: 30px; }
+  .section {
+    padding: 60px 0; }
+  #header .main-nav > li {
+    margin-left: 0; }
   .industry-section #slider-top .slide {
-    height: -webkit-calc(100vh - 112px);
-    height: calc(100vh - 112px); } }
+    height: 572px; }
+  .industry-section .industry-block {
+    width: 380px; }
+  .about-us-section .bage-section {
+    position: absolute;
+    top: 55%; }
+    .about-us-section .bage-section .wrapper {
+      padding: 0 30px 15px; }
+  .projects-section li {
+    margin-bottom: 23px; }
+  .projects-section .hover-block .flex-block {
+    padding: 10px; }
+  .projects-section .hover-block h2 {
+    margin-bottom: 10px;
+    font-size: 1em; }
+  .clients-section .slider-preview .photo-wrapper {
+    margin-right: 15px; }
+  .blog-section {
+    padding-bottom: 40px; }
+    .blog-section:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      height: 100%;
+      margin-top: 0;
+      background-position: -100px 0; }
+  .contacts-section .group-block {
+    height: 128px;
+    padding: 10px 20px;
+    text-align: left; } }
 
 @media screen and (min-width: 992px) {
   body {
-    font: 14px/1.8em 'Domine', serif; } }
+    font: 14px/1.8em 'Domine', serif; }
+  .section {
+    padding: 80px 0; }
+  .industry-section #slider-top .slide {
+    height: 581px; }
+  .industry-section .industry-block {
+    width: 460px; }
+  .about-us-section .bage-section {
+    position: absolute;
+    top: 60%; }
+    .about-us-section .bage-section .wrapper {
+      padding: 0 30px 30px; }
+  .projects-section li {
+    margin-bottom: 30px; }
+  .projects-section .hover-block .flex-block {
+    padding: 50px 20px; }
+  .projects-section .hover-block h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em; }
+  .clients-section .slider-preview .photo-wrapper {
+    margin-right: 15px; }
+  .blog-section header .mini-nav {
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    margin: 0; }
+    .blog-section header .mini-nav button {
+      margin-right: 10px; }
+  .blog-section:after {
+    background-position: 0 0; }
+  .contacts-section .group-block {
+    height: 128px;
+    padding: 40px 30px; }
+    .contacts-section .group-block img {
+      float: left;
+      margin-right: 10px; } }
 
 @media screen and (min-width: 1200px) {
   body {
     font: 15px/1.8em 'Domine', serif; }
   .section {
-    padding: 90px 0; } }
+    padding: 90px 0; }
+  .industry-section #slider-top .slide {
+    height: 592px; }
+  .contacts-section .group-block img {
+    margin-right: 40px; } }

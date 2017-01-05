@@ -13,7 +13,7 @@ body {
 
 .button-link {
   display: inline-block;
-  padding: 0 15px;
+  padding: 0 2.5em;
   font: 0.8em $second-font;
   line-height: 3em;
   color: #ffffff;
@@ -31,7 +31,7 @@ body {
 }
 
 .section-header {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: $second-font;
   text-transform: uppercase;
 
@@ -199,6 +199,7 @@ body {
   #slider-top {
 
     .slide {
+      height: 800px;
       background: url("../img/slide-img-1.jpg") 50% 50% no-repeat;
       background-size: cover;
     }
@@ -206,7 +207,7 @@ body {
 
   .industry-block {
     position: absolute;
-    top: 20%;
+    top: 100px;
     width: 460px;
     max-width: 100%;
     font-family: $second-font;
@@ -227,19 +228,54 @@ body {
       }
     }
 
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     li {
-      border-right: 1px solid #00a6d3;
-      border-bottom: 1px solid #00a6d3;
+      padding: 0;
+      border: 1px solid #00a6d3;
+    }
 
-      a {
+    .industry-link {
+      display: block;
+      height: 100%;
+      padding: 30px;
+      color: inherit;
+
+      &.last {
+        display: inline-flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      img {
         display: block;
-        padding: 20px;
-        color: inherit;
+        margin-bottom: 10px;
+      }
 
-        img {
-          display: block;
+      .fa-angle-right {
+        display: inline-block;
+        float: right;
+        padding: 0 0.5em;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+
+      &:hover {
+        background-color: #00a6d3;
+        text-decoration: none;
+
+        .fa-angle-right {
+          opacity: 1;
         }
-
       }
     }
   }
@@ -315,7 +351,7 @@ body {
   }
 }
 
-//-----------------------STEPS-SECTION-----------------
+//-----------------------PROJECTS-SECTION-----------------
 .projects-section {
   text-align: center;
 
@@ -324,7 +360,7 @@ body {
   }
 
   li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .project {
@@ -394,12 +430,12 @@ body {
       justify-content: center;
       text-align: center;
       align-items: center;
-      padding: 50px 20px;
+      padding: 10px;
     }
 
     h2 {
-      margin-bottom: 10px;
-      font: bold 1.2em $second-font;
+      margin-bottom: 5px;
+      font: bold 0.9em $second-font;
       text-transform: uppercase;
     }
 
@@ -410,7 +446,7 @@ body {
 //-----------------------CLIENTS-SECTION-----------------
 .clients-section {
   background-color: $accent-color;
-  color: #ffffff;
+  color: #ddf8ff;;
 
   .section-header {
     p {
@@ -421,58 +457,293 @@ body {
     }
   }
 
-  .slider-nav-bottom {
-    left: 95%;
+  .slide {
+    blockquote {
+      position: relative;
+      padding: 20px 100px 0;
+      margin-bottom: 50px;
+
+      &:before,
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        width: 68px;
+        height: 48px;
+        background: url(../img/icon-quote.png) no-repeat;
+      }
+
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+        transform: scaleX(-1);
+      }
+    }
+    span {
+      display: block;
+      margin-top: 30px;
+      width: 17px;
+      border-bottom: 2px solid #ffffff;
+    }
   }
 
-  #slider-clients {
-    .slider-preview {
-      position: static;
-      display: flex;
-      justify-content: space-between;
-      width: 80%;
-      height: auto;
-      margin: 0;
+  .slider-preview {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: 0;
 
-      li {
-        position: static;
-        display: inline-flex;
-        width: auto;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        text-indent: 0;
-        border: none;
-        border-radius: 0;
-      }
+    li {
+      position: static;
+      display: inline-flex;
+      width: auto;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      text-indent: 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .photo-wrapper {
+      margin-right: 30px;
+      width: 66px;
+      height: 66px;
+      overflow: hidden;
+      text-align: center;
+      border-radius: 50%;
+      opacity: 0.5;
+    }
+
+    h2 {
+      font: bold 1em $second-font;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .active {
+      background: none;
 
       .photo-wrapper {
-        margin-right: 30px;
-        width: 66px;
-        height: 66px;
-        overflow: hidden;
+        opacity: 1;
+      }
+    }
+  }
+
+  .slider-nav-bottom {
+    left: auto;
+    right: 0;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+
+    li {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #ffffff;
+
+      &:hover,
+      &.active {
+        border-color: $second-color;
+        background-color: transparent;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          width: 3px;
+          height: 3px;
+          background-color: $second-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+//-----------------------BLOG-SECTION-----------------
+.blog-section {
+  position: relative;
+  background-color: #e7eff1;
+  padding-bottom: 0;
+
+  &:after {
+    content:"";
+    display: block;
+    margin-top: 20px;
+    height: 400px;
+    background: url(../img/man-on-cliff.jpg) 0 0 no-repeat;
+    background-size: auto 100%;
+  }
+
+  header {
+
+    h1 {
+    position: relative;
+    }
+
+    .mini-nav {
+      margin-top: 20px;
+
+      button {
+        display: inline-block;
+        width: 12em;
+        margin-right: 20px;
         text-align: center;
-        border-radius: 50%;
-        opacity: 0.5;
-      }
-
-      h2 {
-        font: bold 1em $second-font;
+        font-size: 0.8em;
         text-transform: uppercase;
-      }
+        background-color: transparent;
+        border: 2px solid #989fa0;
+        border-radius: 20px;
 
-      .active {
-        background: none;
+        &.active {
+          border-color: $title-color;
+        }
 
-        .photo-wrapper {
-          opacity: 1;
+        &:hover {
+          color: $title-color;
         }
       }
     }
   }
 
+  .posts {
+    li {
+      margin-bottom: 60px;
 
+      &.last {
+        margin-bottom: 0;
+      }
+    }
+
+    data {
+      color: #343a3b;
+
+      span.color {
+        color: $second-color;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #343a3b;
+      font: bold 1.2em $second-font;
+      text-transform: uppercase;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: $second-color;
+        }
+      }
+    }
+
+  }
 }
+
+//-----------------------CONTACTS-SECTION-----------------
+.contacts-section {
+  .group-block {
+    display: block;
+    height: 128px;
+    padding: 40px 30px;
+    color: #343a3b;
+    text-align: center;
+    border: 1px solid #e1eaec;
+
+    img {
+      float: none;
+    }
+
+    dt {
+      font: bold 1.2em $second-font;
+      text-transform: uppercase;
+    }
+
+    dd {
+      font-size: 1.2em;
+    }
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+      text-decoration: none;
+      background-color: #e7eff1;
+    }
+  }
+}
+
+//-----------------------FOOTER-----------------
+#footer {
+  background-color: #262829;
+  padding-bottom: 50px;
+
+  h2 {
+    margin-bottom: 30px;
+    color: #e1e1e1;
+    font: bold 1.3em $second-font;
+    text-transform: uppercase;
+  }
+
+  #mc-embedded-subscribe-form {
+    position: relative;
+    margin-top: 40px;
+    line-height: 3.3em;
+
+    .email {
+      width: 100%;
+      padding: 0 10em 0 2em;
+      text-transform: uppercase;
+      background-color: #323334;
+      border-radius: 30px;
+      border: 0;
+    }
+
+    .button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 2em;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: $second-color;
+      border-radius: 30px;
+      border: 0;
+
+      &:hover {
+        border: 2px solid $second-color;
+        background-color: transparent;
+        color: $second-color;
+      }
+    }
+
+  }
+
+  a {
+    color: inherit;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $title-color;
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    margin-top: 90px;
+    padding: 20px 0 0;
+    border-top: 1px solid #323334;
+  }
+}
+
 @import "media768";
 @import "media992";
 @import "media1200";

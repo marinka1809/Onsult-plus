@@ -1,16 +1,94 @@
 @media screen and (min-width: 768px) {
   body {
-    body {
       font: 13px/1.8em 'Domine', serif;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  #header {
+    .main-nav {
+      > li {
+        margin-left: 0;
+      }
     }
   }
+
   .industry-section {
 
     #slider-top {
       .slide {
-      height: calc(100vh - 112px);
+        height: 572px;
+      }
+    }
+
+    .industry-block {
+       width: 380px;
+    }
+  }
+
+  .about-us-section {
+    .bage-section {
+      position: absolute;
+      top: 55%;
+
+      .wrapper {
+        padding: 0 30px 15px;
       }
     }
   }
- 
+
+  .projects-section {
+
+    li {
+      margin-bottom: 23px;
+    }
+
+    .hover-block {
+      .flex-block {
+        padding: 10px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .clients-section {
+    .slider-preview {
+      .photo-wrapper {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .blog-section {
+    padding-bottom: 40px;
+
+    &:after {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       left: 50%;
+       right: 0;
+       height: 100%;
+       margin-top: 0;
+       background-position: -100px 0;
+     }
+  }
+
+  .contacts-section {
+    .group-block {
+      height: 128px;
+      padding: 10px 20px;
+      text-align: left;
+    }
+  }
 }
