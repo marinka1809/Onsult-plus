@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
         <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.css">
 
@@ -302,39 +303,37 @@
                     <p>Happy Clients</p>
                     <h1>Testimonials</h1>
                 </header>
-                <div id="slider-clients" class="carousel slide" data-ride="carousel">
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner slider-content" role="listbox">
-                        <div class="item active slide">
+                <div  class="flexslider">
+                    <ul class="slides">
+                        <li class="slide">
                             <blockquote>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
                                 unchanged.
                                 <span></span>
                             </blockquote>
-                        </div>
-                        <div class="item slide">
+                        </li>
+                        <li class="slide">
                             <blockquote>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
                                 unchanged.
                                 <span></span>
                             </blockquote>
-                        </div>
-                        <div class="item slide">
+                        </li>
+                        <li class="slide">
                             <blockquote>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci
                                 book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
                                 unchanged.
                                 <span></span>
                             </blockquote>
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <ol class="carousel-indicators slider-preview">
-                        <li data-target="#slider-clients" data-slide-to="0" class="active">
+                        </li>
+                    </ul>
+                </div>
+                <div class="flexslider-controls">
+                    <ol class="slider-preview">
+                        <li>
                             <div class="photo-wrapper">
                                 <img class="img-responsive" src="img/photo-client-1.jpg" alt="Photo Client">
                             </div>
@@ -343,7 +342,7 @@
                                 <p>Designation</p>
                             </div>
                         </li>
-                        <li data-target="#slider-clients" data-slide-to="1">
+                        <li>
                             <div class="photo-wrapper">
                                 <img class="img-responsive" src="img/photo-client-2.jpg" alt="Photo Client">
                             </div>
@@ -352,7 +351,7 @@
                                 <p>Designation</p>
                             </div>
                         </li>
-                        <li data-target="#slider-clients" data-slide-to="2">
+                        <li>
                             <div class="photo-wrapper">
                                 <img class="img-responsive" src="img/photo-client-3.jpg" alt="Photo Client">
                             </div>
@@ -361,11 +360,6 @@
                                 <p>Designation</p>
                             </div>
                         </li>
-                    </ol>
-                    <ol class="carousel-indicators slider-nav-bottom">
-                        <li data-target="#slider-clients" data-slide-to="0" class="active"></li>
-                        <li data-target="#slider-clients" data-slide-to="1"></li>
-                        <li data-target="#slider-clients" data-slide-to="2"></li>
                     </ol>
                 </div>
             </div>
@@ -519,6 +513,5 @@
                 <p class="copyright" > Copyright &copy; 2016 Consultplus theme.</p>
             </div>
         </footer>
-
     </body>
 </html>

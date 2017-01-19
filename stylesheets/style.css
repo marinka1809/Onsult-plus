@@ -389,31 +389,37 @@ body {
     color: #a6ecff; }
   .clients-section .section-header h1 {
     color: #ffffff; }
-  .clients-section .slide blockquote {
-    position: relative;
-    padding: 10px 45px 0;
-    margin-bottom: 20px; }
-    .clients-section .slide blockquote:before, .clients-section .slide blockquote:after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      width: 34px;
-      height: 24px;
-      background: url(../img/icon-quote.png) no-repeat;
-      background-size: cover; }
-    .clients-section .slide blockquote:before {
-      left: 0; }
-    .clients-section .slide blockquote:after {
-      right: 0;
-      -webkit-transform: scaleX(-1);
-          -ms-transform: scaleX(-1);
-              transform: scaleX(-1); }
-  .clients-section .slide span {
-    display: block;
-    margin-top: 10px;
-    width: 17px;
-    border-bottom: 2px solid #ffffff; }
+  .clients-section .flexslider {
+    background-color: transparent;
+    border: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    margin: 0; }
+    .clients-section .flexslider .slide blockquote {
+      position: relative;
+      padding: 10px 45px 0;
+      margin-bottom: 20px; }
+      .clients-section .flexslider .slide blockquote:before, .clients-section .flexslider .slide blockquote:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        width: 34px;
+        height: 24px;
+        background: url(../img/icon-quote.png) no-repeat;
+        background-size: cover; }
+      .clients-section .flexslider .slide blockquote:before {
+        left: 0; }
+      .clients-section .flexslider .slide blockquote:after {
+        right: 0;
+        -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+                transform: scaleX(-1); }
+    .clients-section .flexslider .slide span {
+      display: block;
+      margin-top: 10px;
+      width: 17px;
+      border-bottom: 2px solid #ffffff; }
   .clients-section .slider-preview {
     position: static;
     display: -webkit-box;
@@ -464,9 +470,9 @@ body {
       font: bold 1em "Montserrat", sans-serif;
       text-transform: uppercase;
       color: #ffffff; }
-    .clients-section .slider-preview .active {
+    .clients-section .slider-preview .flex-active {
       background: none; }
-      .clients-section .slider-preview .active .photo-wrapper {
+      .clients-section .slider-preview .flex-active .photo-wrapper {
         opacity: 1; }
   .clients-section .slider-nav-bottom {
     left: auto;
@@ -639,6 +645,8 @@ body {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
+      .industry-section .industry-block ul li {
+        margin: 0; }
     .industry-section .industry-block .industry-link {
       padding: 30px; }
       .industry-section .industry-block .industry-link img {
@@ -675,14 +683,14 @@ body {
   .projects-section .hover-block h2 {
     margin-bottom: 10px;
     font-size: 1em; }
-  .clients-section .slide blockquote {
+  .clients-section .flexslider .slide blockquote {
     padding: 20px 100px 0;
     margin-bottom: 50px; }
-    .clients-section .slide blockquote:before, .clients-section .slide blockquote:after {
+    .clients-section .flexslider .slide blockquote:before, .clients-section .flexslider .slide blockquote:after {
       top: 20px;
       width: 68px;
       height: 48px; }
-  .clients-section .slide span {
+  .clients-section .flexslider .slide span {
     margin-top: 30px; }
   .clients-section .slider-preview {
     -webkit-box-orient: horizontal;

@@ -463,39 +463,46 @@ body {
     }
   }
 
-  .slide {
-    blockquote {
-      position: relative;
-      padding: 10px 45px 0;
-      margin-bottom: 20px;
+  .flexslider {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
 
-      &:before,
-      &:after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 10px;
-        width: 34px;
-        height: 24px;
-        background: url(../img/icon-quote.png) no-repeat;
-        background-size: cover;
+    .slide {
+      blockquote {
+        position: relative;
+        padding: 10px 45px 0;
+        margin-bottom: 20px;
+
+        &:before,
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 10px;
+          width: 34px;
+          height: 24px;
+          background: url(../img/icon-quote.png) no-repeat;
+          background-size: cover;
+        }
+
+        &:before {
+          left: 0;
+        }
+
+        &:after {
+          right: 0;
+          transform: scaleX(-1);
+        }
       }
 
-      &:before {
-        left: 0;
+      span {
+        display: block;
+        margin-top: 10px;
+        width: 17px;
+        border-bottom: 2px solid #ffffff;
       }
-
-      &:after {
-        right: 0;
-        transform: scaleX(-1);
-      }
-    }
-
-    span {
-      display: block;
-      margin-top: 10px;
-      width: 17px;
-      border-bottom: 2px solid #ffffff;
     }
   }
 
@@ -535,7 +542,7 @@ body {
       color: #ffffff;
     }
 
-    .active {
+    .flex-active {
       background: none;
 
       .photo-wrapper {
