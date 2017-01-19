@@ -377,6 +377,10 @@ body {
       margin-bottom: 5px;
       font: bold 0.9em "Montserrat", sans-serif;
       text-transform: uppercase; }
+    .projects-section .hover-block a {
+      color: inherit; }
+      .projects-section .hover-block a:hover {
+        color: #e7e7e7; }
 
 .clients-section {
   background-color: #03b6e7;
@@ -532,10 +536,10 @@ body {
     color: #343a3b;
     font: bold 1.2em "Montserrat", sans-serif;
     text-transform: uppercase; }
-    .blog-section .posts h2 a {
-      color: inherit; }
-      .blog-section .posts h2 a:hover {
-        color: #16d428; }
+  .blog-section .posts a {
+    color: inherit; }
+    .blog-section .posts a:hover {
+      color: #16d428; }
 
 .contacts-section .group-block {
   display: block;

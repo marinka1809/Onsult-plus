@@ -438,6 +438,13 @@ body {
       text-transform: uppercase;
     }
 
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #e7e7e7;
+      }
+    }
 
   }
 }
@@ -638,16 +645,15 @@ body {
       color: #343a3b;
       font: bold 1.2em $second-font;
       text-transform: uppercase;
-
-      a {
-        color: inherit;
-
-        &:hover {
-          color: $second-color;
-        }
-      }
     }
 
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $second-color;
+      }
+    }
   }
 }
 
