@@ -1,0 +1,150 @@
+@media screen and (min-width: 992px) {
+
+  body {
+    font: 14px/1.8em 'Domine', serif;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  main, aside {
+    margin-top: 80px;
+  }
+
+  //-----------------------INDUSTRY-SECTION-----------------
+  //---------------------------------------------------------
+   .industry-section {
+
+    #slider-top {
+      .slide {
+        height: 581px;
+      }
+    }
+
+    .industry-block {
+      width: 460px;
+      margin: 0;
+    }
+  }
+
+  //-----------------------ABOUT-US-SECTION-----------------
+  //---------------------------------------------------------
+  .about-us-section {
+    .bage-section {
+      position: absolute;
+      top: 60%;
+
+      .wrapper {
+        padding: 0 30px 30px;
+      }
+    }
+  }
+
+  //-----------------------STEPS-SECTION-----------------
+  //---------------------------------------------------------
+  .steps-section {
+
+    li {
+      padding-right: 45px;
+    }
+  }
+
+  //-----------------------PROJECTS-SECTION-----------------
+  //---------------------------------------------------------
+  .projects-section {
+
+    li {
+      margin-bottom: 30px;
+    }
+
+    .hover-block {
+      .flex-block {
+        padding: 50px 20px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  //-----------------------CLIENTS-SECTION-----------------
+  //---------------------------------------------------------
+  .clients-section {
+    .slider-preview {
+      .photo-wrapper {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  //-----------------------BLOG-SECTION-----------------
+  //---------------------------------------------------------
+  .blog-section {
+    header {
+      .mini-nav {
+        position: absolute;
+        top: 1.5em;
+        right: 0;
+        margin: 0;
+
+        button {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &:after {
+      background-position: 0 0;
+    }
+  }
+
+  //-----------------------CONTACTS-SECTION-----------------
+  //---------------------------------------------------------
+  .contacts-section {
+    .group-block {
+      height: 128px;
+      padding: 40px 30px;
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  //-----------------------FOOTER--------------------------
+  //---------------------------------------------------------
+  #footer {
+    .copyright {
+      margin-top: 80px;
+    }
+  }
+
+  //------------------------PRIMARY-CONTENT------------------------
+  //---------------------------------------------------------
+  .primary-content {
+
+    .bottom-block {
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  //---------------------------RELATED-SECTION------------------------
+  //------------------------------------------------------------------
+  .related-section {
+    padding-top: 35px;
+  }
+
+  //---------------------------ASIDE---------------------------------
+  //------------------------------------------------------------------
+  aside {
+    .subscribe-block {
+      padding: 30px 20px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+//-----------------------FOOTER--------------------------
+//---------------------------------------------------------
+#footer {
+  background-color: #262829;
+  padding-bottom: 20px;
+
+  h2 {
+    margin-bottom: 15px;
+    color: #e1e1e1;
+    font: bold 1.3em $second-font;
+    text-transform: uppercase;
+  }
+
+  #mc-embedded-subscribe-form {
+    position: relative;
+    margin: 20px 0;
+    line-height: 3.3em;
+
+    .email {
+      width: 100%;
+      padding: 0 10em 0 2em;
+      text-transform: uppercase;
+      background-color: #323334;
+      border-radius: 30px;
+      border: 0;
+    }
+
+    .button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 2em;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: $second-color;
+      border-radius: 30px;
+      border: 0;
+
+      &:hover {
+        border: 2px solid $second-color;
+        background-color: transparent;
+        color: $second-color;
+      }
+    }
+
+  }
+
+  ul {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: inherit;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $title-color;
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    margin-top: 20px;
+    padding: 20px 0 0;
+    border-top: 1px solid #323334;
+  }
+}
