@@ -230,6 +230,8 @@
   //------------------------PRIMARY-CONTENT------------------------
   //---------------------------------------------------------
   .primary-content {
+    margin-bottom: 45px;
+
     .wrapper-title-img {
       margin-bottom: 45px;
       data {
@@ -241,9 +243,25 @@
         font: bold 1.2em/2.5em $second-font;
       }
     }
+
+    .quote {
+      padding: 40px 70px;
+
+      &:before {
+        top: 50px;
+        left: 30px;
+      }
+
+      &:after {
+        bottom: 0;
+        right: 30px;
+      }
+    }
+
     p.text {
       margin-bottom: 45px;
     }
+
     .bottom-block {
       img {
        margin-bottom: 45px;
@@ -261,6 +279,10 @@
         margin-bottom: 15px;
       }
     }
+  }
+
+  .control-pages {
+     margin-bottom: 60px;
   }
 
   //---------------------------RELATED-SECTION------------------------

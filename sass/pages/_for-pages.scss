@@ -1,6 +1,7 @@
 //------------------------PRIMARY-CONTENT------------------------
 //---------------------------------------------------------
 .primary-content {
+  margin-bottom: 25px;
 
   .wrapper-title-img {
     position: relative;
@@ -35,6 +36,34 @@
     }
   }
 
+  iframe {
+    width: 100%;
+    height: 100px;
+  }
+
+  .quote {
+    padding: 25px 50px;
+    color: #ffffff;
+    background-color: $accent-color;
+
+    &:before, &:after {
+      content: "“";
+      font: 6.5em/0.5em $second-font;
+      position: absolute;
+    }
+
+    &:before {
+      top: 30px;
+      left: 20px;
+    }
+
+    &:after {
+      bottom: -5px;
+      right: 20px;
+      transform: scaleX(-1);
+    }
+  }
+
   p.text {
     margin-bottom: 25px;
   }
@@ -54,6 +83,48 @@
   .text-list {
     margin-bottom: 25px;
     margin-left: 30px;
+  }
+
+  .top-info {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+
+    .button-link {
+      line-height: 3.4em;
+    }
+
+    .share-block {
+      font: 8.5em $second-color;
+      text-transform: uppercase;
+      color: #222222;
+
+      .only-fa {
+        font-size: 1.2em;
+        padding: 0 0.8em;
+        line-height: 2.4em;
+        color: #838b8c;
+        border: 1px solid #d2dbdd;
+        border-radius: 50%;
+
+        &:hover {
+          transform: scale(1.2, 1.2);
+          color: $title-color;
+          text-decoration: none;
+        }
+      }
+
+      data {
+        &:after {
+          content: "|";
+          margin: 0 8px;
+          color: #d2dbdd;
+        }
+      }
+    }
+
   }
 }
 
@@ -102,6 +173,58 @@
   }
 }
 
+.control-pages {
+  font: 0.9em $second-font;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  li{
+    display: inline-block;
+  }
+
+  a {
+    color: #222222;
+
+    &:before, &:after {
+      display: inline-block;
+      font: 1em/1.5em FontAwesome;
+      color: #ffffff;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $second-color;
+
+      &:before, &:after {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+
+  .btn-next {
+    padding-right: 15px;
+    border-right: 1px solid  #d2dbdd;
+
+    &:before {
+      content: "\f0d9";
+      margin-right: 5px;
+      padding: 0 0.7em 0 0.5em;
+      background-color: $second-color;
+    }
+  }
+
+  .btn-prev {
+    padding-left: 14px;
+
+    &:after {
+      content: "\f0da";
+      margin-left: 5px;
+      padding: 0 0.5em 0 0.7em;
+      background-color: $title-color;
+    }
+  }
+}
 
 //---------------------------RELATED-SECTION------------------------
 //------------------------------------------------------------------
@@ -192,6 +315,9 @@
     }
   }
 }
+
+//---------------------------MESSAGE-SECTION------------------------
+//------------------------------------------------------------------
 
 .message-section {
   background-color: #e7eff1;

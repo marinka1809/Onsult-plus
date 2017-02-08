@@ -132,6 +132,24 @@
         margin: 30px 0;
       }
     }
+
+    .quote {
+      padding: 50px 100px;
+
+      &:before {
+        top: 60px;
+        left: 50px;
+      }
+
+      &:after {
+        bottom: 10px;
+        right: 50px;
+      }
+    }
+  }
+
+  .control-pages {
+    margin-bottom: 90px;
   }
 
   //---------------------------RELATED-SECTION------------------------
