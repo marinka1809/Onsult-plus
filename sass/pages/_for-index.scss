@@ -113,28 +113,7 @@
   .bage-section {
     position: relative;
     z-index: 3;
-    display: inline-block;
     margin-top: -80px;
-    padding: 20px;
-    color: #ffffff;
-    background-color: $accent-color;
-    border: 6px solid #ffffff;
-    box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
-
-    .wrapper {
-      padding: 0 30px 30px;
-      background: url(../img/badge-icon.png) center 0 no-repeat;
-      border: 1px solid #35c4eb;
-      font: 0.7em $second-font;
-      text-align: center;
-      text-transform: uppercase;
-
-      strong {
-        margin-top: 100px;
-        display: block;
-        font-size: 7em;
-      }
-    }
   }
 }
 

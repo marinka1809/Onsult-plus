@@ -1,0 +1,147 @@
+
+
+//-----------------------FIRST-ABOUT-SECTION-----------------
+//---------------------------------------------------------
+.first-about-section {
+
+  .relative-block {
+    position: relative;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .bage-section {
+    padding: 15px;
+    font-family: $second-font;
+
+    .wrapper {
+      padding: 0 20px 10px;
+      font-size: 0.6em;
+      text-align: center;
+      text-transform: uppercase;
+
+      strong {
+        margin-top: 90px;
+        font-size: 7em;
+      }
+    }
+
+    .last-wrapper {
+      padding: 25px 10px 5px;
+      font-size: 0.6em;
+      text-align: center;
+      text-transform: uppercase;
+
+      strong {
+        display: block;
+        font-size: 5em;
+      }
+    }
+  }
+}
+
+
+//-----------------------TWIN-SECTION-----------------
+//-----------------------------------------------------
+.twin-section {
+  text-align: center;
+  border-bottom: 1px solid #dbe4e4;
+
+  .section-header {
+     p{
+       text-align: center;
+     }
+  }
+
+  .prime-block {
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+
+//-----------------------MANAGEMENT-SECTION-----------------
+//-----------------------------------------------------
+.management-section {
+  text-align: center;
+
+  .photo-wrapper {
+    float: left;
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .li-content {
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  h2 {
+    margin-bottom: 5px;
+    font: bold 1em $second-font;
+    color: #343a3b;
+    text-transform: uppercase;
+  }
+
+  .title-p {
+    margin-bottom: 10px;
+    font: 0.9em $second-font;
+    text-transform: uppercase;
+  }
+
+  .last-p {
+    margin-bottom: 20px;
+  }
+
+  .social-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font: 0.85em/3em $second-font;
+    text-transform: uppercase;
+    border-top: 1px solid #dbe4e4;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .facebook {
+      color: #3b5998;
+    }
+
+    .twitter {
+      color: #50abf1;
+    }
+
+    .google {
+      color: #dc4b3f;
+    }
+  }
+}

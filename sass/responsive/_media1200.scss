@@ -8,13 +8,16 @@
     padding: 90px 0;
   }
 
-  main, aside {
-    margin-top: 90px;
+  .blog, .pages {
+    main, aside {
+      margin-top: 90px;
+    }
   }
 
   //-----------------------BANNER-SECTION------------------
   //---------------------------------------------------------
   .banner-section {
+   // padding: 120px 0;
     background: #e7eff0 url(../../img/bg-banner.png) right 50% no-repeat;
   }
 
@@ -52,5 +55,14 @@
   //------------------------------------------------------------------
   .related-section {
     padding-top: 35px;
+  }
+
+  //-----------------------MANAGEMENT-SECTION-----------------
+  //-----------------------------------------------------
+  .management-section {
+
+    .photo-wrapper {
+      margin-right: 25px;
+    }
   }
 }

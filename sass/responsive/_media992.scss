@@ -8,8 +8,10 @@
     padding: 80px 0;
   }
 
-  main, aside {
-    margin-top: 80px;
+  .blog, .pages {
+    main, aside {
+      margin-top: 80px;
+    }
   }
 
   //-----------------------INDUSTRY-SECTION-----------------
@@ -163,6 +165,27 @@
   aside {
     .subscribe-block {
       padding: 30px 20px;
+    }
+  }
+
+  //-----------------------MANAGEMENT-SECTION-----------------
+  //-----------------------------------------------------
+  .management-section {
+
+    .photo-wrapper {
+      margin-right: 10px;
+    }
+
+    .li-content {
+      margin-bottom: 50px;
+    }
+
+    .title-p {
+      margin-bottom: 25px;
+    }
+
+    .last-p {
+      margin-bottom: 45px;
     }
   }
 }

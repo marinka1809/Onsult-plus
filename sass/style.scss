@@ -50,8 +50,10 @@ body {
   padding: 40px 0;
 }
 
-main, aside {
-  margin-top: 40px;
+.blog, .pages {
+  main, aside {
+    margin-top: 40px;
+  }
 }
 
 .slider-nav {
@@ -126,14 +128,38 @@ a {
   }
 }
 
+.bage-section {
+  display: inline-block;
+  padding: 20px;
+  color: #ffffff;
+  background-color: $accent-color;
+  border: 6px solid #ffffff;
+  box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+
+  .wrapper {
+    padding: 0 30px 30px;
+    background: url(../img/badge-icon.png) center 0 no-repeat;
+    border: 1px solid #35c4eb;
+    font: 0.7em $second-font;
+    text-align: center;
+    text-transform: uppercase;
+
+    strong {
+      margin-top: 100px;
+      display: block;
+      font-size: 7em;
+    }
+  }
+}
 
 
-@import "parts/header";
+
+@import "parts/header";//header + banner-section
 @import "parts/aside";
 @import "parts/footer";
-@import "pages/for-pages";
 @import "pages/for-index";
-
+@import "pages/for-pages";// For blog.html and for blog post - pages.html
+@import "pages/for-about-us";
 
 @import "responsive/media768";
 @import "responsive/media992";

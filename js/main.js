@@ -8,16 +8,22 @@ $(document).ready(function(){
         manualControls: ".slider-preview li"
     });
 
-    $(".blog .primary-content").css ("cursor", "pointer");
+    artificialLink (".blog .primary-content");
+    artificialLink  (".man-squad");
 
-    $(".blog .primary-content").on("click", function (e) {
-        if (!(e.target.getAttribute('href')== null)) {
-          href= e.target.getAttribute('href');
-        }
-        else {
-            href = $(this).attr("data-href");
-        }
-        window.location.href=href;
-        e.preventDefault();
-    });
+    function artificialLink(element) {
+        $(element).css ("cursor", "pointer");
+
+        $(element).on("click", function (e) {
+            if (!(e.target.getAttribute('href')== null)) {
+                href= e.target.getAttribute('href');
+            }
+            else {
+                href = $(this).attr("data-href");
+            }
+            window.location.href=href;
+            e.preventDefault();
+        });
+    };
+
 });

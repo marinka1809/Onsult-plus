@@ -12,8 +12,10 @@
     padding: 60px 0;
   }
 
-  main, aside {
-    margin-top: 60px;
+  .blog, .pages {
+    main, aside {
+      margin-top: 60px;
+    }
   }
 
   //---------------------------HEADER------------------------
@@ -322,4 +324,78 @@
       padding: 20px 8px;
     }
   }
+
+  //-----------------------FIRST-ABOUT-SECTION-----------------
+  //---------------------------------------------------------
+  .first-about-section {
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .bage-section {
+      position: absolute;
+      top:0;
+      right: 0;
+
+      .wrapper {
+        padding: 0 20px 20px;
+
+        strong {
+          margin-top: 100px;
+        }
+      }
+
+      .last-wrapper {
+        padding: 50px 10px 30px;
+      }
+    }
+  }
+
+  //-----------------------TWIN-SECTION-----------------
+  //-----------------------------------------------------
+  .twin-section {
+
+    .section-header {
+      p {
+        text-align: left;
+      }
+    }
+
+    .prime-block {
+      margin-bottom: 60px;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      margin-bottom: 45px;
+    }
+  }
+
+  //-----------------------MANAGEMENT-SECTION-----------------
+  //-----------------------------------------------------
+  .management-section {
+
+    .photo-wrapper {
+      margin-right: 25px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .li-content {
+      margin-bottom: 40px;
+    }
+
+    .title-p {
+      margin-bottom: 15px;
+    }
+
+    .last-p {
+      margin-bottom: 30px;
+    }
+  }
 }
+
