@@ -397,5 +397,28 @@
       margin-bottom: 30px;
     }
   }
+
+  //-----------------------PRIMARY-TEAM-----------------
+  //-----------------------------------------------------
+  .primary-team {
+
+    .primary-team-item {
+      margin-bottom: 0;
+
+
+      .team-text {
+        padding: 25px 15px;
+
+        .title-p{
+          margin-bottom: 15px;
+        }
+
+        .social-block {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
 }
 

@@ -65,4 +65,36 @@
       margin-right: 25px;
     }
   }
+
+  //-----------------------PRIMARY-TEAM-----------------
+  //-----------------------------------------------------
+  .primary-team {
+
+    .primary-team-item {
+
+      .team-text {
+        padding: 45px 40px;
+
+        .title-p{
+          margin-bottom: 35px;
+        }
+
+        .social-block {
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+
+  //-----------------------OTHER-TEAM-----------------
+  //-----------------------------------------------------
+  .other-team {
+
+    .hover-block {
+
+      .hover-content {
+        padding: 0 20px 15px;
+      }
+    }
+  }
 }

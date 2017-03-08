@@ -152,6 +152,46 @@ a {
   }
 }
 
+.team-name {
+  margin-bottom: 5px;
+  font: bold 1em $second-font;
+  color: #343a3b;
+  text-transform: uppercase;
+}
+
+.title-p {
+  margin-bottom: 10px;
+  font: 0.9em $second-font;
+  text-transform: uppercase;
+}
+
+.social-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font: 0.85em/3em $second-font;
+  text-transform: uppercase;
+  border-top: 1px solid #dbe4e4;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .facebook {
+    color: #3b5998;
+  }
+
+  .twitter {
+    color: #50abf1;
+  }
+
+  .google {
+    color: #dc4b3f;
+  }
+}
 
 
 @import "parts/header";//header + banner-section
@@ -160,6 +200,7 @@ a {
 @import "pages/for-index";
 @import "pages/for-pages";// For blog.html and for blog post - pages.html
 @import "pages/for-about-us";
+@import "pages/for-team";
 
 @import "responsive/media768";
 @import "responsive/media992";
