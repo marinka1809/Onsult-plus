@@ -80,7 +80,8 @@ body {
     font-size: 0.9em; }
   .section-header h1 {
     font-size: 2.1em;
-    color: #343a3b; }
+    color: #343a3b;
+    font-weight: 700; }
 
 .section {
   padding: 40px 0; }
@@ -1134,9 +1135,6 @@ aside .subscribe-block {
   .management-section .last-p {
     margin-bottom: 20px; }
 
-.primary-team .section-header h1 {
-  font-weight: 700; }
-
 .primary-team .primary-team-item {
   border: 1px solid #dee8eb;
   margin-bottom: 20px; }
@@ -1161,8 +1159,6 @@ aside .subscribe-block {
 
 .other-team {
   background-color: #e7eff1; }
-  .other-team .section-header h1 {
-    font-weight: 700; }
   .other-team .other-team-ul li {
     margin-bottom: 30px; }
     .other-team .other-team-ul li:hover .hover-block {
@@ -1201,6 +1197,105 @@ aside .subscribe-block {
         margin: 0; }
       .other-team .hover-block .social-block a {
         color: #000000; }
+
+.questions-section .questions-ol {
+  cursor: pointer;
+  counter-reset: myCounter; }
+  .questions-section .questions-ol li {
+    padding: 25px 0;
+    border-bottom: 1px solid #dee8eb; }
+    .questions-section .questions-ol li:before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      float: left;
+      color: #ffffff;
+      background: #ffac56;
+      display: inline-block;
+      text-align: center;
+      margin: 0 20px 0 0;
+      line-height: 2em;
+      width: 2em;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .questions-section .questions-ol li.active:before, .questions-section .questions-ol li:hover:before {
+      background: #16d428; }
+    .questions-section .questions-ol li .content {
+      overflow: hidden; }
+
+.questions-section .question {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.questions-section .answer {
+  display: none;
+  margin-top: 25px;
+  margin-bottom: 20px; }
+
+.ask-question {
+  color: #ffffff; }
+  .ask-question .wrapper {
+    padding: 20px 25px;
+    background-color: #03b6e7; }
+  .ask-question .section-header h1 {
+    color: inherit;
+    font-size: 1.5em; }
+  .ask-question .ask li {
+    margin-bottom: 25px; }
+  .ask-question .ask input,
+  .ask-question .ask textarea {
+    width: 100%;
+    color: #ffffff;
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid #48c4e8; }
+    .ask-question .ask input::-webkit-input-placeholder, .ask-question .ask input::-webkit-input-placeholder,
+    .ask-question .ask textarea::-webkit-input-placeholder,
+    .ask-question .ask textarea::-webkit-input-placeholder {
+      color: #ffffff;
+      text-transform: uppercase; }
+    .ask-question .ask input::-moz-placeholder, .ask-question .ask input::-moz-placeholder,
+    .ask-question .ask textarea::-moz-placeholder,
+    .ask-question .ask textarea::-moz-placeholder {
+      color: #ffffff;
+      text-transform: uppercase; }
+    .ask-question .ask input:-moz-placeholder, .ask-question .ask input:-moz-placeholder,
+    .ask-question .ask textarea:-moz-placeholder,
+    .ask-question .ask textarea:-moz-placeholder {
+      color: #ffffff;
+      text-transform: uppercase; }
+    .ask-question .ask input:-ms-input-placeholder, .ask-question .ask input:-ms-input-placeholder,
+    .ask-question .ask textarea:-ms-input-placeholder,
+    .ask-question .ask textarea:-ms-input-placeholder {
+      color: #ffffff;
+      text-transform: uppercase; }
+  .ask-question .ask input[placeholder],
+  .ask-question .ask textarea[placeholder] {
+    color: #ffffff; }
+  .ask-question .ask textarea {
+    resize: none; }
+  .ask-question .ask .button-link {
+    width: 100%; }
+
+.contact-section {
+  color: #ffffff;
+  background-color: #03b6e7; }
+  .contact-section .flex-block {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact-section .section-header h1 {
+    color: inherit; }
 
 @media screen and (min-width: 768px) {
   body {

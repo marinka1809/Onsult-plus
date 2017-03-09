@@ -26,4 +26,8 @@ $(document).ready(function(){
         });
     };
 
+    $('.questions-ol li').on("click", function (e) {
+        $(this).find(".answer").slideToggle(1000);
+        $(this).toggleClass("active");
+    });
 });

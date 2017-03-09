@@ -1,0 +1,143 @@
+//-----------------------QUESTIONS-SECTION-----------------
+//-----------------------------------------------------
+.questions-section {
+
+  .questions-ol {
+    cursor: pointer;
+    counter-reset: myCounter;
+
+    li{
+      padding: 25px 0;
+      border-bottom: 1px solid #dee8eb;
+
+      &:before {
+        counter-increment: myCounter;
+        content:counter(myCounter);
+        float: left;
+        color: #ffffff;
+        background: $title-color;
+        display: inline-block;
+        text-align: center;
+        margin: 0 20px 0 0;
+        line-height: 2em;
+        width: 2em;
+        border-radius: 50%;
+      }
+      &.active,
+      &:hover {
+        &:before {
+          background: $second-color;
+        }
+      }
+
+      .content {
+        overflow: hidden;
+      }
+    }
+  }
+
+  .question {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+//-----------------------ASK-QUESTIONS-----------------
+//---------------------------------------------------------
+.ask-question {
+  color: #ffffff;
+
+  .wrapper {
+    padding: 20px 25px;
+    background-color: $accent-color;
+  }
+
+  .section-header {
+    h1{
+      color: inherit;
+      font-size: 1.5em;
+    }
+  }
+
+  .ask {
+
+    li {
+    margin-bottom: 25px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      color: #ffffff;
+      background-color: inherit;
+      border: 0;
+      border-bottom: 1px solid #48c4e8;
+
+      &::-webkit-input-placeholder,
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      &::-moz-placeholder,
+      &::-moz-placeholder {
+         color: #ffffff;
+         text-transform: uppercase;
+      }
+
+      &:-moz-placeholder,
+      &:-moz-placeholder {
+          color: #ffffff;
+          text-transform: uppercase;
+      }
+
+      &:-ms-input-placeholder,
+      &:-ms-input-placeholder {
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+
+    input[placeholder],
+    textarea[placeholder]  {
+     color: #ffffff;
+    }
+    textarea {
+      resize: none;
+    }
+
+    .button-link {
+      width: 100%;
+    }
+  }
+}
+
+
+//-----------------------CONTACT-SECTION-----------------
+//---------------------------------------------------------
+.contact-section {
+  color: #ffffff;
+  background-color: $accent-color;
+
+  .flex-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-header {
+    h1{
+      color: inherit;
+    }
+  }
+
+}
+
