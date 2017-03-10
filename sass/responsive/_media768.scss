@@ -419,6 +419,20 @@
       }
     }
   }
+  //-----------------------CONTACT-SECTION-----------------
+  //---------------------------------------------------------
+  .contact-section {
+    color: #ffffff;
+    background-color: $accent-color;
+
+    .flex-block {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
   //-----------------------INDASTRIES-SECTION-----------------
   //----------------------------------------------------------
