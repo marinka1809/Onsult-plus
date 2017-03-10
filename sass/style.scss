@@ -1,0 +1,210 @@
+$accent-color: #03b6e7;
+$title-color: #ffac56;
+$second-color: #16d428;
+$second-font: 'Montserrat', sans-serif;
+
+@import "reset";
+
+body {
+  font: 11px/1.8em 'Domine', serif;
+  color: #838b8c;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0 2.5em;
+  font: 0.8em $second-font;
+  line-height: 3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $second-color;
+  border: 2px solid $second-color;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    color: $second-color;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+.section-header {
+  margin-bottom: 15px;
+  font-family: $second-font;
+  text-transform: uppercase;
+  text-align: center;
+
+  p {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 2.1em;
+    color: #343a3b;
+    font-weight: 700;
+  }
+
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.blog, .pages {
+  main, aside {
+    margin-top: 40px;
+  }
+}
+
+.slider-nav {
+  background-color: transparent;
+  width: 5%;
+
+  .fa {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .slider-nav-right,
+  .slider-nav-left {
+    margin-top: -50px;
+    width: auto;
+    height: auto;
+    background-color: #000000;
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .slider-nav-right {
+    right: 0;
+    margin-right: 10px;
+    padding: 0 5px 0 10px;
+  }
+
+  .slider-nav-left {
+    left: 0;
+    margin-left: 10px;
+    padding: 0 10px 0 5px;
+  }
+}
+
+.text-list {
+  li {
+    &:before {
+      content: "\f00c";
+      padding-right: 1em;
+      font-family: FontAwesome;
+      color: $title-color;
+    }
+  }
+}
+
+.main-part {
+  border-bottom: 1px solid #e2e6e7;
+}
+
+a {
+  .text-block{
+    font: 0.9em $second-font;
+    text-transform: uppercase;
+    color: #343a3b;
+
+    data {
+      display: block;
+      color: #ffac55;
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+    .text-block{
+      color: $second-color;
+      data {
+        color: #838b8c;
+      }
+    }
+  }
+}
+
+.bage-section {
+  display: inline-block;
+  padding: 20px;
+  color: #ffffff;
+  background-color: $accent-color;
+  border: 6px solid #ffffff;
+  box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+
+  .wrapper {
+    padding: 0 30px 30px;
+    background: url(../img/badge-icon.png) center 0 no-repeat;
+    border: 1px solid #35c4eb;
+    font: 0.7em $second-font;
+    text-align: center;
+    text-transform: uppercase;
+
+    strong {
+      margin-top: 100px;
+      display: block;
+      font-size: 7em;
+    }
+  }
+}
+
+.team-name {
+  margin-bottom: 5px;
+  font: bold 1em $second-font;
+  color: #343a3b;
+  text-transform: uppercase;
+}
+
+.title-p {
+  margin-bottom: 10px;
+  font: 0.9em $second-font;
+  text-transform: uppercase;
+}
+
+.social-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font: 0.85em/3em $second-font;
+  text-transform: uppercase;
+  border-top: 1px solid #dbe4e4;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .facebook {
+    color: #3b5998;
+  }
+
+  .twitter {
+    color: #50abf1;
+  }
+
+  .google {
+    color: #dc4b3f;
+  }
+}
+
+
+@import "parts/header";//header + banner-section
+@import "parts/aside";
+@import "parts/footer";
+@import "pages/for-index";
+@import "pages/for-pages";// For blog.html and for blog post - pages.html
+@import "pages/for-about-us";
+@import "pages/for-team";
+@import "pages/for-faqs";
+@import "pages/for-industary";
+
+@import "responsive/media768";
+@import "responsive/media992";
+@import "responsive/media1200";

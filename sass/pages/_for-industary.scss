@@ -1,0 +1,91 @@
+.industry-page {
+  .projects-section{
+    background-color: #e7eff1;
+  }
+}
+
+//-----------------------INDASTRIES-SECTION-----------------
+//----------------------------------------------------------
+.industries-section {
+  text-align: center;
+
+  li {
+    text-align: left;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    color: #343a3b;
+    font: bold 1.2em/1.2em $second-font;
+    text-transform: uppercase;
+  }
+
+  .content {
+    overflow: visible;
+
+    p {
+      overflow: hidden;
+    }
+
+    &:before {
+      float: left;
+      width: 2em;
+      margin-right: 10px;
+      text-align: center;
+      font: 5em/2em FontAwesome;
+      color: $accent-color;
+      border: 1px solid #d0dcdf;
+      border-radius: 50%;
+    }
+    &:hover {
+      &:before {
+        box-shadow: 0 0 55px rgba(210, 222, 225, 0.6);
+        color: $title-color;
+      }
+    }
+  }
+
+  .business {
+    &:before {
+      content: "\f0b1";
+    }
+  }
+  .education {
+    &:before {
+      content: "\f19c";
+    }
+  }
+  .technology {
+    &:before {
+      content: "\f109";
+    }
+  }
+  .real-estate {
+    &:before {
+      content: "\f015";
+    }
+  }
+  .telecommunication {
+     &:before {
+       content: "\f025";
+     }
+  }
+  .financial {
+    &:before {
+      content: "\f155";
+    }
+  }
+  .law {
+    &:before {
+      content: "\f0e3";
+    }
+  }
+  .construction {
+    &:before {
+      content: "\f0f7";
+    }
+  }
+}
+

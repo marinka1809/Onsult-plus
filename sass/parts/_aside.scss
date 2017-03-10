@@ -1,0 +1,134 @@
+//---------------------------ASIDE---------------------------------
+//------------------------------------------------------------------
+aside {
+
+  .element-sidebar {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font: bold 1.2em $second-font;
+    color: #343a3b;
+    text-transform: uppercase;
+  }
+
+  .search-block {
+    h2 {
+      margin-bottom: 5px;
+      font-size: 0.9em;
+      font-weight: normal;
+      color: #898e8f;
+    }
+  }
+
+  .search {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 0 50px 0 15px;
+      color: #b5bdbe;
+      line-height: 3em;
+      border: 1px solid #d2dbdd;
+
+      &:focus {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 15px;
+      font-size: 1.3em;
+      line-height: 2.3em;
+      color: #4c4e4f;;
+      cursor: pointer;
+      background: none;
+      border: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .categories {
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $title-color;
+      }
+    }
+    li {
+      &:before {
+        content: "\f101";
+        padding-right: 0.8em;
+      }
+    }
+  }
+
+  .featured-posts {
+    li {
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+
+    a {
+      img {
+        width: 100%;
+        height: auto;
+        transition: all 0.8s ease-out;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .tags {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .button-link {
+      margin-bottom: 10px;
+
+      font-size: 0.8em;
+      padding: 0 1.2em;
+    }
+  }
+
+  .subscribe-block {
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #d2dbdd;
+
+    p {
+      font: 0.9em $second-font;
+      text-transform: uppercase;
+      color: #343a3b;
+    }
+
+    input {
+      width: 100%;
+      padding: 0 15px;
+      font-size: 0.9em;
+      line-height: 3em;
+      border: 1px solid #d2dbdd;
+      margin-bottom: 10px;
+    }
+
+    .button-link {
+      border: 2px solid $second-color;
+      &:focus {
+        border-radius: 20px;
+      }
+    }
+  }
+}

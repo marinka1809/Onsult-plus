@@ -1,0 +1,137 @@
+//---------------------------HEADER------------------------
+//---------------------------------------------------------
+#header {
+
+  .top-info {
+    background-color: #262829;
+
+    dl {
+      text-align: right;
+      font-size: 0.8em;
+      line-height: 3em;
+    }
+
+    dd, dt {
+      display: inline-block;
+    }
+
+    dt {
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    dd.mail {
+      margin-right: 20px;
+      padding-right: 20px;
+      border-right: 1px solid #838b8c;
+    }
+
+    a {
+      color: #727779;
+
+      &:hover {
+        color: $title-color;
+      }
+    }
+
+  }
+
+  .logo {
+    width: 149px;
+    height: 42px;
+    overflow: hidden;
+  }
+}
+
+.nav-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 25px 0;
+  background: transparent;
+  border:none;
+  box-shadow:none;
+
+  .mob-menu-button {
+    background-color: transparent;
+
+    .icon-bar {
+      color: $title-color;
+    }
+
+    &:focus,
+    &:hover,
+    .active{
+      background-color: transparent;
+      box-shadow: 0 0 8px $title-color;
+    }
+  }
+
+  .collapsing {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #ffffff;
+  }
+
+  .collapse.in {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #ffffff;
+  }
+
+  .main-nav {
+    >li {
+      margin-left: 10px;
+      >a { // символы > для увеличения веса сылектора, чтобы перебить бутстраповские стили.
+        color: #4e4e4e;
+        font-family: $second-font;
+        line-height: 0.5em;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus,
+        &.active {
+          color: $title-color;
+        }
+      }
+    }
+  }
+}
+
+//-----------------------BANNER-SECTION------------------
+//---------------------------------------------------------
+.banner-section {
+  position: relative;
+  z-index: -2;
+  padding: 60px 0;
+  background: #e7eff0 url(../../img/bg-banner.png) 50% 50% no-repeat;
+  background-size: auto 100%;
+
+  h1{
+    position: relative;
+    z-index: 2;
+    padding: 0 15px;
+    font: 300 2.4em/1.3em 'Lato', sans-serif;
+    color: #1c1c1c;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top:0;
+      left:0;
+      right: 0;
+      width: 1.4em;
+      height: 1.4em;
+      background-color: $title-color;
+      border-radius: 50%;
+
+    }
+  }
+}

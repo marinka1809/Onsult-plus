@@ -1,0 +1,100 @@
+@media screen and (min-width: 1200px) {
+
+  body {
+    font: 15px/1.8em 'Domine', serif;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .blog, .pages {
+    main, aside {
+      margin-top: 90px;
+    }
+  }
+
+  //-----------------------BANNER-SECTION------------------
+  //---------------------------------------------------------
+  .banner-section {
+   // padding: 120px 0;
+    background: #e7eff0 url(../../img/bg-banner.png) right 50% no-repeat;
+  }
+
+  //-----------------------INDUSTRY-SECTION-----------------
+  //---------------------------------------------------------
+  .industry-section {
+
+    #slider-top {
+      .slide {
+        height: 592px;
+      }
+    }
+  }
+
+  //-----------------------CONTACTS-SECTION-----------------
+  //---------------------------------------------------------
+  .contacts-section {
+    .group-block {
+      img {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  //-----------------------FOOTER--------------------------
+  //---------------------------------------------------------
+  #footer {
+    .copyright {
+      margin-top: 90px;
+
+    }
+  }
+
+  //---------------------------RELATED-SECTION------------------------
+  //------------------------------------------------------------------
+  .related-section {
+    padding-top: 35px;
+  }
+
+  //-----------------------MANAGEMENT-SECTION-----------------
+  //-----------------------------------------------------
+  .management-section {
+
+    .photo-wrapper {
+      margin-right: 25px;
+    }
+  }
+
+  //-----------------------PRIMARY-TEAM-----------------
+  //-----------------------------------------------------
+  .primary-team {
+
+    .primary-team-item {
+
+      .team-text {
+        padding: 45px 40px;
+
+        .title-p{
+          margin-bottom: 35px;
+        }
+
+        .social-block {
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+
+  //-----------------------OTHER-TEAM-----------------
+  //-----------------------------------------------------
+  .other-team {
+
+    .hover-block {
+
+      .hover-content {
+        padding: 0 20px 15px;
+      }
+    }
+  }
+}
