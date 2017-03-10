@@ -10,9 +10,9 @@ $(document).ready(function(){
 
     artificialLink (".blog .primary-content");
     artificialLink  (".man-squad");
+    artificialLink  (".industries-section li");
 
     function artificialLink(element) {
-        $(element).css ("cursor", "pointer");
 
         $(element).on("click", function (e) {
             if (!(e.target.getAttribute('href')== null)) {

@@ -1297,6 +1297,55 @@ aside .subscribe-block {
   .contact-section .section-header h1 {
     color: inherit; }
 
+.industry-page .projects-section {
+  background-color: #e7eff1; }
+
+.industries-section {
+  text-align: center; }
+  .industries-section li {
+    text-align: left;
+    margin-bottom: 25px;
+    cursor: pointer; }
+  .industries-section h3 {
+    margin-bottom: 10px;
+    color: #343a3b;
+    font: bold 1.2em/1.2em "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  .industries-section .content {
+    overflow: visible; }
+    .industries-section .content p {
+      overflow: hidden; }
+    .industries-section .content:before {
+      float: left;
+      width: 2em;
+      margin-right: 10px;
+      text-align: center;
+      font: 5em/2em FontAwesome;
+      color: #03b6e7;
+      border: 1px solid #d0dcdf;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .industries-section .content:hover:before {
+      -webkit-box-shadow: 0 0 55px rgba(210, 222, 225, 0.6);
+              box-shadow: 0 0 55px rgba(210, 222, 225, 0.6);
+      color: #ffac56; }
+  .industries-section .business:before {
+    content: "\f0b1"; }
+  .industries-section .education:before {
+    content: "\f19c"; }
+  .industries-section .technology:before {
+    content: "\f109"; }
+  .industries-section .real-estate:before {
+    content: "\f015"; }
+  .industries-section .telecommunication:before {
+    content: "\f025"; }
+  .industries-section .financial:before {
+    content: "\f155"; }
+  .industries-section .law:before {
+    content: "\f0e3"; }
+  .industries-section .construction:before {
+    content: "\f0f7"; }
+
 @media screen and (min-width: 768px) {
   body {
     font: 13px/1.8em 'Domine', serif; }
@@ -1495,7 +1544,9 @@ aside .subscribe-block {
       .primary-team .primary-team-item .team-text .title-p {
         margin-bottom: 15px; }
       .primary-team .primary-team-item .team-text .social-block {
-        margin-top: 30px; } }
+        margin-top: 30px; }
+  .industries-section li {
+    margin-bottom: 40px; } }
 
 @media screen and (min-width: 992px) {
   body {
@@ -1567,7 +1618,13 @@ aside .subscribe-block {
   .management-section .last-p {
     margin-bottom: 45px; }
   .other-team .hover-block .hover-content {
-    padding: 0 10px 15px; } }
+    padding: 0 10px 15px; }
+  .industries-section li {
+    margin-bottom: 80px; }
+  .industries-section h3 {
+    margin-bottom: 20px; }
+  .industries-section .content:before {
+    margin-right: 50px; } }
 
 @media screen and (min-width: 1200px) {
   body {
